@@ -1,4 +1,4 @@
-import { arrayDim } from './arrayDimensionality';
+import { arrayDim } from './array-dimensionality';
 
 test('Empty array is of dimension 1', () => {
   expect(arrayDim([])).toBe(1);
