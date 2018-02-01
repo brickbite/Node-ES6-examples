@@ -4,7 +4,10 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "array": "jest array-dimensionality.test.js",
+    "dist": "jest find-distance.test.js",
+    "links": "jest find-links.test.js"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
