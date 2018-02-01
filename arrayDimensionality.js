@@ -1,4 +1,3 @@
-export default function arrayDim() {
-
+export function arrayDim() {
   return 1;
-}
+};
