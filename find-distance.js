@@ -11,6 +11,7 @@ export async function findDistance(origin, destination, departure) {
       port: 443,
       method: `GET`,
       path: `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=Washington,DC&destinations=New+York+City,NY&key=${process.env.API_KEY}`});
+    
     response.on('data', () => {
       console.log(`receiving data`);
     })
