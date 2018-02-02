@@ -1,5 +1,9 @@
 import { arrayDim } from './array-dimensionality';
 
+test('Returns a number', () => {
+  expect(typeof arrayDim([])).toBe('number');
+});
+
 test('Empty array is of dimension 1', () => {
   expect(arrayDim([])).toBe(1);
 });
