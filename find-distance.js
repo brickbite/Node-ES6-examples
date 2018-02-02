@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const { promisify } = require('util');
 const https = require('https');
 const getAsync = promisify(https.get);
