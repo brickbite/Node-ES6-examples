@@ -1,10 +1,10 @@
-export function arrayDim(arr, maxDims = 0) {
-  if (arr.isArray()) {
-    maxDims++;
+export function arrayDim(arr, dims = 0) {
+  if (Array.isArray.call(null, arr)) {
+    dims++;
     arr.forEach((ele) => {
-      maxDims = arrayDim(ele, dims);
+      dims = arrayDim(ele, dims);
     });
   }
   
-  return maxDims;
+  return dims;
 };
