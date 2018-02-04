@@ -23,3 +23,5 @@ export async function findDistance(origin, destination, departure) {
     console.log(`Error in request: `, err.headers);
   }
 };
+
+// console.log(findDistance());
