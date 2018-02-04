@@ -6,6 +6,7 @@ const getAsync = promisify(https.get);
 
 export async function findDistance(origin = `Santa Monica, CA 90401`, destination = `Los Angeles, CA 90027`, departure = new Date()) {
 
+  departure < new Date() ? departure = new Date() : null;
   departure = Math.round(departure.getTime() / 1000);
 
   try {
