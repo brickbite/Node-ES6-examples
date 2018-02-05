@@ -9,10 +9,10 @@ test('Valid dirname: returns an array', async () => {
 test('Valid dirname: returns an array', async () => {
   const result = await findLinks(`${__dirname}/website`, 'badsite');
   // added sort for result: async function can get results in different order
-  expect(result.sort()).toEqual([ './website/badsite1.html',
-  './website/next/another/badsite4.html',
-  './website/next/badsite3.html',
-  './website/badsite2.html'].sort());
+  expect(result.sort()).toEqual([`${__dirname}/website/badsite1.html`,
+  `${__dirname}/website/next/another/badsite4.html`,
+  `${__dirname}/website/next/badsite3.html`,
+  `${__dirname}/website/badsite2.html`].sort());
 });
 
 test('Invalid dirname: returns undefined', async () => {
