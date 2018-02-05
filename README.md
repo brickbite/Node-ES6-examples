@@ -6,6 +6,7 @@
 ## To Test:
 1. clone repo, navigate to directory in terminal, be sure Node version is at least the above
 1. run ```yarn install```
+1. create .env file (see example.env), and enter google maps api
 1. run ```yarn test``` to see all tests together
 
 ## Notes:
