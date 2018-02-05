@@ -37,10 +37,12 @@ export async function findDistance(
     err.on('end', () => {
       // console.log('======== data end:', response);
       response = JSON.parse(response);
-      // console.log(`mileage: ${response.rows[0].elements[0].distance.text}`);
+      console.log(`mileage: ${response.rows[0].elements[0].distance.text}`);
+      // console.log(`requesthandler function:`);
+      // console.log(requestHandler);
       requestHandler(null, null, null, response.rows[0].elements[0].distance.text);
     });
-    
+
     return;
   }
 };
